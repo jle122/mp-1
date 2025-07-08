@@ -2,10 +2,132 @@
     margin:0;
 }
 
-nav {
-    color:cornflowerblue
+body {
+    background-color:rgb(0,128,198);
+    color:rgb(255,194,14);
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    color: blue
+nav ul li {
+    display: block;
+    border: 3px solid rgb(0,34,68);
+    padding: 5px;
+    font-size: calc(4px + 1vw);
+}
+
+nav ul {
+    background-color: rgb(255,194,14);
+    max-width: 30%;
+    padding-left:0px;
+    list-style: none;
+}
+
+header {
+    background-color: rgb(0,34,68);
+}
+
+main {
+    max-width: 70%;
+    border: 2px solid rgb(0,34,68);
+    /* Sets it so the minimum height is 100vh, allowing main to grow as needed with the content inside it, but not be smaller than 100vh*/
+    /* Height was at first used on main as with the hint for 100vh, but an issue came where main would not grow with the content,
+    resulting in overlap and overflowing the footer, due to how height gives an exact size without room for change with content */
+    min-height:100vh; 
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+    background-color: rgb(0,34,68);
+}
+
+main p {
+    font-size: calc(3px + 1vw);
+}
+
+footer {
+    background-color: rgb(0,34,68);
+}
+
+div {
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+div ul li {
+    font-size: calc(3px + 1vw);
+}
+
+div h3 {
+    font-size: calc(6px + 1vw);
+}
+
+div h4 {
+    font-size: calc(4px + 1vw);
+}
+
+div h5 {
+    font-size: calc(3px + 1vw);
+}
+
+h2 {
+    font-size: calc(10px + 1vw);
+}
+
+#calc {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(255,194,14);
+}
+
+#calculator {
+    background-color: rgb(0,34,68);
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    border: rgb(255,194,14) solid 2px;
+}
+
+@media screen and (max-width:1000px) {
+    nav ul {
+        background-color: rgb(255,194,14);
+        max-width: 100%;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        border: none;
+        max-width: 70%;
+    }
+    header {
+        background-color: rgb(0,34,68);
+        text-align: center;
+    }
+
+    img {
+        max-width: 25%;
+        max-height:35%;
+    }
+
+    main {
+        max-width: 100%;
+        text-align: center;
+        padding-left:0;
+        padding-right:0;
+        padding-bottom: 1px;
+    }
+
+    #calculator {
+        max-width: 100%;
+        margin:0px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #calculator input {
+        max-width: 80%;
+    }
 }

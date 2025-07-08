@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylessheet" type="text/css" href="mp-1-styles.css">
+        <link rel="stylesheet" type="text/css" href="mp-1-styles.css">
         <title>James Le | Projects</title>
     </head>
     <body>
@@ -20,9 +20,28 @@
                 <li><a href="skills.html">Skills</a></li>
             </ul>
         </nav>
-        <main>
+        <main id="calc">
             <h3>Projects</h3>
+            <div id="calculator">
+                <h4>Calculator:</h4>
+                <label>First number: </label><input type="text" id="first-number">
+                <br> <br>
+                <label>Second number: </label><input type="text" id="second-number">
+                <br> <br>
+                <br> <br>
+                <div>
+                    <button id="add" onclick="addition()">+</button>
+                    <button id="sub" onclick="subtraction()">-</button>
+                    <button id="mul" onclick="multiplication()">*</button>
+                    <button id="div" onclick="division()">/</button>
+                    <button id="pow" onclick="power()">**</button>
+                    <button id="clear" onclick="clearInputs()">CLEAR</button>
+                </div>
 
+                <div id="output"></div>            
+            </div>
+
+            <script src="calculator.js"></script>
         </main>
         <footer>
             <p>All Rights Reserved by James Le <a href="">Credits</a> &#169;</p>
